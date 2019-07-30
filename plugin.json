@@ -1,0 +1,56 @@
+{
+    "version": "1.1564507765",
+  "name": "custom.jmx.Counting1231564507765688",
+  "type": "JMX",
+  "metricGroup": "custom.jmx.Counting123",
+  "processTypes": [
+    10,
+    12,
+    13,
+    16,
+    17,
+    18
+  ],
+  "entity": "PROCESS_GROUP_INSTANCE",
+  "configUI": {
+    "displayName": "Counting123"
+  },
+  "ui": {
+    "charts": [
+      {
+        "group": "Counting123 metrics",
+        "title": "Counter",
+        "series": [
+          {
+            "key": "metric_Counter_1564507760778",
+            "aggregation": "avg",
+            "displayname": "Counter"
+          }
+        ]
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "timeseries": {
+        "key": "metric_Counter_1564507760778",
+        "unit": "Count",
+        "displayname": "Counter",
+        "dimensions": [
+          "rx_pid"
+        ]
+      },
+      "source": {
+        "domain": "CounterAgent",
+        "keyProperties": {
+          "name": "mynewcounter"
+        },
+        "attribute": "Counter",
+        "allowAdditionalKeys": true,
+        "calculateDelta": false,
+        "calculateRate": false,
+        "aggregation": "AVG"
+      }
+    }
+  ]
+}
