@@ -1,8 +1,8 @@
 package beandemo;
 
 /**
- * Hello world!
- *
+ * Main class which creates the simple agent object to instantiate our mBean and register it with the management server.
+ * 
  */
 public class App 
 {
