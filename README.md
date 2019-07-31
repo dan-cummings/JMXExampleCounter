@@ -51,7 +51,26 @@ In your Dynatrace environment head to Settings > Monitored Technologies > Custom
 
 ![Dynatrace Custom Plugins page](images/customplugins.png)
 
-## Contributing
+Here we can either upload a custom created plugin, either JMX, custom python, or ActiveGate plugin.
+
+Select `Add new monitoring technology` and select `JMX/PMI plugin` from the next page. This will move us to the JMX plugin editor where we will select the `mbeandemos-*-SNAPSHOT.jar` as the metric data source.
+
+![Dynatrace JMX editor - Metric source](images/plugindatasource.png)
+
+From there we can select the domain, `CounterAgent`, and any existing key properties, `key and then choose an attribute that we wish to create the metric from.
+
+![Dynatrace JMX editor - Metric selection](images/pluginmetricdef.png)
+
+After we save this plugin the OneAgent will get this new plugin definiton and begin to poll the JMX management entity for these attribute values. 
+
+## Useful Links
+
+[Oracle JMX documentation](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html)
+
+[Dynatrace JMX Help](https://www.dynatrace.com/support/help/shortlink/plugins-java)
+
+
+## Contributings
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
